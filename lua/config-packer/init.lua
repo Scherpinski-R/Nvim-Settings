@@ -5,12 +5,12 @@ return require('packer').startup(function()
 
   -- IDE (treesitter, LSP, vim-cmp)
   
-  use{ 
+  use{
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
   
-  use { 
+  use {
     "williamboman/nvim-lsp-installer",
     "neovim/nvim-lspconfig"
   }
@@ -25,4 +25,6 @@ return require('packer').startup(function()
   -- Tabs or Spaces
 
   -- Colorschemes
+  use 'junegunn/seoul256.vim'
+
 end)

@@ -28,6 +28,12 @@ return require('packer').startup(function()
     'L3MON4D3/LuaSnip'
   }
 
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   -- Tabs or Spaces
 
   -- Colorschemes
